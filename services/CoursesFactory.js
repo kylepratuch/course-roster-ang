@@ -1,3 +1,4 @@
+//CourseFactory is used so that StudentsController and CoursesController can interact
 courseRoster.factory('CoursesFactory', function CoursesFactory(){
   var factory = {};
   factory.courses = [];

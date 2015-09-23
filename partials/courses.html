@@ -1,12 +1,15 @@
+<!-- Page view in 'courses' state -->
 <div ng-show="courses.length">
   <h1>Here are all of your courses:</h1>
   <ul>
+    <!-- Lists students from course.students array. Determined by a particular course.id -->
     <li ng-repeat="item in courses">
       <a ui-sref="courses.students({ courseId: item.id })">{{ item.name }}</a>
     </li>
   </ul>
 </div>
 
+<!-- Add course form -->
 <div class="col-md-4">
   <h3>Add a new course</h3>
   <form ng-submit="CoursesFactory.addCourse()" class="form-inline" role="form">
