@@ -4,7 +4,8 @@
   <ul>
     <!-- Lists students from course.students array. Determined by a particular course.id -->
     <li ng-repeat="item in courses">
-      <a ui-sref="courses.students({ courseId: item.id })">{{ item.name }}</a>
+      <!-- <a ui-sref="courses.students({ courseId: item.id })">{{ item.name }}</a> -->
+      <div sample-course course="{{item.name}}"></div>
     </li>
   </ul>
 </div>
