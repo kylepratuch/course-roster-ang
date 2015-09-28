@@ -6,8 +6,10 @@
     <li ng-repeat="item in courses">
       <!-- <a ui-sref="courses.students({ courseId: item.id })">{{ item.name }}</a> -->
       <div sample-course course="{{item.name}}"></div>
+      <div alert warn="alertAlert()"></div>
     </li>
   </ul>
+
 </div>
 
 <!-- Add course form -->

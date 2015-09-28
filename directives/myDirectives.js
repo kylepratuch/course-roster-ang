@@ -20,3 +20,13 @@ courseRoster.directive("sampleCourse", function(){
     template: '<div>{{course}}</div>'
   }
 });
+
+courseRoster.directive("alert", function() {
+  return {
+    scope:{
+      warn:"&"
+    },
+      template:'<div class="button" ng-click="warn()">Alert!</div>'
+    
+  }
+});
