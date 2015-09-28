@@ -1,11 +1,12 @@
 <!-- Page view in 'courses' state -->
 <div ng-show="courses.length">
   <h1>Here are all of your courses:</h1>
-  <ul>
+  <ul >
     <!-- Lists students from course.students array. Determined by a particular course.id -->
-    <li ng-repeat="item in courses">
+    <li ng-repeat="item in courses" debug>
+      {{item.name}}
       <!-- <a ui-sref="courses.students({ courseId: item.id })">{{ item.name }}</a> -->
-      <div sample-course course="{{item.name}}"></div>
+      <sample-course course="{{item.name}}" debug></sample-course>
       <div alert warn="alertAlert()"></div>
     </li>
   </ul>
